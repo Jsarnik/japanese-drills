@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding-top: 50px;
 }
 
 .App-logo {
@@ -11,6 +12,53 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.MuiButtonBase-root.MuiListItem-root.MuiListItem-button:not(.voice-button):hover, .MuiButtonBase-root.MuiListItem-root.selected{
+  background-color: #4caf5036;
+}
+
+.MuiList-root{
+  width: 100%;
+}
+
+.question-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.question, .answer{
+    flex-basis: 50%;
+    padding-right: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .question, .answer{
+      flex-basis: 100%;
+      padding-bottom: 50px;
+      padding-right: 0px;
+  }
+  .question-container{
+    display: flex;
+    flex-direction: column;
+  }  
+}
+
+audio{
+  width: 100%;
+}
+
+.phrase{
+  flex-basis: 100%;
+}
+
+.question-container, .phrase-container{
+  margin-bottom: 50px;
+}
+
+.MuiButtonBase-root.voice-button{
+  border: 1px solid black;
+  background: #eee;
 }
 
 .App-header {

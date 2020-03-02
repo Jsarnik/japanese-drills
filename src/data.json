@@ -1,0 +1,239 @@
+{
+	"questions": [
+		{
+			"question":{
+				"english": "What is your name?",
+				"romaji": "Oname wa nan desu ka",
+                "hiragana": "おなめわなんですか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/01-Onamae-wa-nan-desu-ka.mp3?_=3" 
+			},
+			"answer": {
+				"english": "My name is __",
+				"romaji": "__ desu",
+                "hiragana": "__　です",
+                "audio": "my_name_is_justin.mp3"
+			}
+		},
+		{
+			"question":{
+				"english": "Where are you from?",
+				"romaji": "Okuni wa dochira desu ka",
+				"no_kanji": "おくにわどちらですか",
+                "hiragana": "奥にわどちらですか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/02-Okuni-wa-dochira-desu-ka.mp3?_=4"
+			},
+			"answer": {
+				"english": "I am American",
+				"romaji": "Amerikajin desu",
+				"hiragana": "アメリカ人です",
+                "audio": "I_am_america.mp3"
+			}
+        },
+        {
+			"question":{
+				"english": "Why did you come to Japan?",
+				"romaji": "Nande nihon e kitan desu ka",
+				"no_kanji": "なんでにほんえきたんですか",
+                "hiragana": "なんで日本えきたんですか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/04-Nan-de-nihon-e-kitan-desu-ka.mp3?_=6"
+			},
+			"answer": {
+				"english": "I am on holiday",   
+				"romaji": "Kyūka-chūdesu",
+				"hiragana": "キュカーちゅです",
+                "audio": "i_am_on_holiday.mp3"
+			}
+        },
+		{
+			"question":{
+				"english": "How old are you?",
+				"romaji": "Oikutsu desu ka",
+                "hiragana": "おいくつですか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/05-Oikutsu-desu-ka.mp3?_=7"
+			},
+			"answer": {
+				"english": "I am 35 years old",
+				"romaji": "sanjuugo sai desu",
+				"no_kanji": "さんじゅごさいです",
+				"hiragana": "三十五歳です",
+                "audio": "i_am_35_years_old.mp3"
+			}
+		},
+		{
+			"question":{
+				"english": "Can you use chopsticks?",
+				"romaji": "Hashi tsukaemasu ka",
+				"no_kanji": "ハシつかえますか",
+                "hiragana": "箸使えますか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/06-Hashi-tsukaemasu-ka.mp3?_=8"
+			},
+			"answer": {
+				"english": "Just a little bit",
+				"romaji": "Hai, chotto",
+				"hiragana": "はい、ちょっと",
+                "audio": null
+			}
+		},
+		{
+			"question":{
+				"english": "Do you eat *natto*?",
+				"romaji": "*natto* taberaremasu ka",
+				"no_kanji": "*ナット* たべられます",
+                "hiragana": "*ナット* 食べられますか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/07-Natto-Taberareru.mp3?_=9"
+			},
+			"answer": {
+				"english": "Yes, I will eat *natto*",
+				"romaji": "Hai, *natto* o tabemasu",
+				"no_kanji": "ハイ、*ナット*　をたべます",
+				"hiragana": "はい、*ナット* を食べます",
+                "audio": "yes_i_will_eat_natto.mp3"
+			}
+		},
+		{
+			"question":{
+				"english": "Is this your first time to Japan?",
+				"romaji": "Nihon wa hajimete desu ka",
+				"no_kanji": "にほんわはじめてですか",
+                "hiragana": "日本わ初めてですか",
+                "audio": "https://learnjapanesepod.com/wp-content/uploads/09-Nihon-wa-hajimete-desu-ka.mp3?_=11"
+			}
+		},
+		{
+			"question":{
+				"english": "Where is the bathroom?",
+				"romaji": "Toire wa doko desu ka",
+				"hiragana": "トイレわどこですか",
+                "audio": "where_is_the_bathroom.mp3"
+			},
+			"answer": {
+				"english": "It is over there",
+				"romaji": "asoko desu",
+				"hiragana": "あそこです",
+                "audio": "it_is_over_there.mp3"
+			}
+		},
+		{
+			"question":{
+				"english": "What is this?",
+				"romaji": "kore wa nan desu ka?", 
+				"hiragana": "これわなんですか",
+                "audio": null
+			}
+		},
+		{
+			"question":{
+				"english": "Do you speak english?",
+				"romaji": "Eigo wa hanasemasu ka",
+				"no_kanji": "えいごわはなせますか",
+				"hiragana": "英語わ話せますか",
+                "audio": "do_you_speak_english.mp3"
+			}
+		},
+		{
+			"question":{
+				"english": "Is this the *train* to *tokyo*?",
+				"romaji": "kore wa *tokyo* no *denshadesu* ka",
+				"no_kanji": "これわ　*ときょ*　の　*でんしゃです*　か",
+				"hiragana": "これわ *と許* の *電車です* か",
+                "audio": "is_this_the_train_to_tokyo.mp3"
+			}
+        },
+        {
+			"question":{
+				"english": "Excuse me, How much is it to *nagoya*?",
+				"romaji": "sumimasen, nagoya made ikura desu ka",
+				"no_kanji": "すみません、ナゴヤまでいくらですか",
+				"hiragana": "すみません、名古屋までいくらですか",
+                "audio": "escuse_me_how_much_is_it_to_nagoya.mp3"
+			}
+        },
+		{
+			"question":{
+				"english": "How much is this?",
+				"romaji": "Kore wa ikura desu ka",
+				"hiragana": "これわいくらですか",
+                "audio": "how_much_is_this.mp3"
+			},
+			"answer": {
+				"english": "It is 7500 yen",
+				"romaji": "sore wa nanzen gohyaku en desu",
+				"no_kanji": "それわなんぜんごひゃくえんです",
+				"hiragana": "それわなんぜん五百縁です",
+                "audio": "it_is_7500_yen.mp3"
+			}
+		},
+		{
+			"question":{
+				"english": "Are you ready to order?",
+				"romaji": "gochuumon (wa) okimari desu ka",
+				"no_kanji": "ごちゅうもん（わ）おこまりですか",
+				"hiragana": "ごちゅうもんわお決まりですか",
+                "audio": "are_you_ready_to_order.mp3"
+			}
+		}
+	],
+	"phrases": [
+        {
+			"english": "Did you understand?",
+			"romaji": "wakarimashita ka",
+			"hiragana": "わかりましたか",
+            "audio": "did_you_understand.mp3"
+		},{
+			"english": "Please say it slowly",
+			"romaji": "yukkuri itte kudasai",
+			"no_kanji": "ゆっくりいってください",
+			"hiragana": "ゆっくり行ってください",
+            "audio": "please_say_it_slowly.mp3"
+		},{
+			"english": "Please wait",
+			"romaji": "chotto matte kudasai",
+			"no_kanji": "ちょっとまってくだあい",
+			"hiragana": "ちょっと待ってください",
+            "audio": "please_wait.mp3"
+		},{
+			"english": "Welcome. Here's the menu",
+			"romaji": "irasshaimasse. menyuu o doozo",
+			"hiragana": "いらっしゃいまっせ。メニュウをどうぞ",
+            "audio": "welcome_here_is_the_menu.mp3"
+        },{
+			"english": "Chef, 2 pieces of salmon please.",
+			"romaji": "Taishō! Saamon Ni Kan Kudasai",
+			"no_kanji": "たいしお！さあもんにかんください",
+			"hiragana": "対処！さあもんにかんください",
+            "audio": "chef_two_pieces_of_salmon_please.mp3"
+		},{
+			"english": "two beers, please.",
+			"romaji": "biiru ga futatsu, onegaishimasu",
+			"no_kanji": "びっるがふたつ、おねがいします",
+			"hiragana": "美いるが二つ、お願いします",
+            "audio": "two_beers_please.mp3"
+		},{
+			"english": "I'll have this.",
+			"romaji": "kore o kudasai",
+			"hiragana": "これをください",
+            "audio": "i_will_have_this.mp3"
+		},{
+			"english": "thank you for the meal",
+			"romaji": "gochisousamadeshita",
+			"hiragana": "ごちそうさまでした",
+            "audio": "thank_you_for_the_meal.mp3"
+		},{
+			"english": "let's eat",
+			"romaji": "itadakimasu",
+			"hiragana": "いただきます",
+            "audio": "lets_eat.mp3"
+		},{
+			"english": "that was delicious",
+			"romaji": "oishikatta desu",
+			"no_kanji": "おいしかったです",
+			"hiragana": "美味しかったです",
+            "audio": "that_was_delishes.mp3"
+		},{
+			"english": "",
+			"romaji": "",
+			"no_kanji": "",
+			"hiragana": ""
+        }
+	]
+}
