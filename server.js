@@ -5,6 +5,7 @@ const express = require('express'),
       mongoConfig = require('./MongoConfig'),
       routes = require('./routes/routes'),
       cardService = require('./mongo/CardService'),
+      path = require('path'),
       cors = require('cors');
 
 process.env.UV_THREADPOOL_SIZE = 128;
@@ -19,7 +20,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(timeout(120000));
 app.use(haltOnTimedout);
-app.use(express.static(__dirname + '/views'));
+app.use(express.static(path.join(__dirname,'/app/build')));
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'app', 'build', 'index.html'));
+});
+
 app.use((req, res, next)=> {
     res.header('Access-Control-Allow-Origin', `*`);
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
