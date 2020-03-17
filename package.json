@@ -23,7 +23,7 @@
     "fs": "0.0.1-security",
     "handlebars": ">=4.0.14",
     "lodash": ">=4.17.13",
-    "mongoose": "^4.13.9",
+    "mongoose": "^5.7.5",
     "node-cache": "^4.1.1",
     "passport": "^0.3.2",
     "passport-http": "^0.3.0",
