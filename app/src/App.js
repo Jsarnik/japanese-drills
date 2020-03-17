@@ -62,6 +62,7 @@ function App() {
               <Switch>
                   <Route exact path="/" render={(props) => <Directory/>} />
                   <Route exact path="/flashcards/:lesson" render={(props) => <FlashCards isMobile={isMobile}/>} />
+                  <Route exact path="/flashcards/:lesson/e" render={(props) => <FlashCards isMobile={isMobile} isEnglishFirst={true} />} />
                   <Route exact path="/add" render={(props) => <AddCard isMobile={isMobile}/>} />
                   <Route exact path="/edit" render={(props) => <EditCards isMobile={isMobile}/>} />
                   <Redirect to="/"/>

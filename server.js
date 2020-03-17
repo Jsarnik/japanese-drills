@@ -21,8 +21,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(timeout(120000));
 app.use(haltOnTimedout);
 app.use(express.static(path.join(__dirname,'/app/build')));
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'app', 'build', 'index.html'));
+app.get('*', function(req, res, next) {
+    if (!/^\/api/.test(req.url)) {
+        res.sendFile(path.join(__dirname, 'app', 'build', 'index.html'));
+    } else {
+        return next();
+    };
 });
 
 app.use((req, res, next)=> {
@@ -30,10 +34,6 @@ app.use((req, res, next)=> {
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
     next();
-});
-
-app.get('/', function(req, res) {
-    res.sendfile('index.html');
 });
 
 routes.configure(app);

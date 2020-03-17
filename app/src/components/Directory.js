@@ -6,6 +6,7 @@ import FeedbackIcon from '@material-ui/icons/Feedback';
 import ListItemText from '@material-ui/core/ListItemText';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Divider from '@material-ui/core/Divider';
 import { useDispatch, useSelector } from "react-redux";
 import * as cardActions from '../actions/cardActions';
 import * as _ from 'lodash';
@@ -34,28 +35,59 @@ function Directory() {
                         <ListItemIcon>
                             <FeedbackIcon/>
                         </ListItemIcon>
-                        <ListItemText primary={'phrases'}/>
+                        <ListItemText primary={'phrases ( japanese -> english )'}/>
                         {_phrase}
                     </ListItem>
                     <ListItem button onClick={()=>link('question')}>
                         <ListItemIcon>
                             <FeedbackIcon/>
                         </ListItemIcon>
-                        <ListItemText primary={'questions'}/>
+                        <ListItemText primary={'questions ( japanese -> english )'}/>
                         {_question}
                     </ListItem>
                     <ListItem button onClick={()=>link('vocab')}>
                         <ListItemIcon>
                             <FeedbackIcon/>
                         </ListItemIcon>
-                        <ListItemText primary={'vocab'}/>
+                        <ListItemText primary={'vocab ( japanese -> english )'}/>
                         {_vocab}
                     </ListItem>
                     <ListItem button onClick={()=>link('all')}>
                         <ListItemIcon>
                             <FeedbackIcon/>
                         </ListItemIcon>
-                        <ListItemText primary={'all'}/>
+                        <ListItemText primary={'all ( japanese -> english )'}/>
+                        {_all}
+                    </ListItem>
+
+                    <Divider></Divider>
+
+                    <ListItem button onClick={()=>link('phrase/e')}>
+                        <ListItemIcon>
+                            <FeedbackIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary={'phrases ( english -> japanese )'}/>
+                        {_phrase}
+                    </ListItem>
+                    <ListItem button onClick={()=>link('question/e')}>
+                        <ListItemIcon>
+                            <FeedbackIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary={'questions ( english -> japanese )'}/>
+                        {_question}
+                    </ListItem>
+                    <ListItem button onClick={()=>link('vocab/e')}>
+                        <ListItemIcon>
+                            <FeedbackIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary={'vocab ( english -> japanese )'}/>
+                        {_vocab}
+                    </ListItem>
+                    <ListItem button onClick={()=>link('all/e')}>
+                        <ListItemIcon>
+                            <FeedbackIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary={'all ( english -> japanese )'}/>
                         {_all}
                     </ListItem>
                 </List>

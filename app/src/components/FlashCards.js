@@ -33,7 +33,7 @@ const GreenButton = withStyles(theme => ({
     },
   }))(Button);
 
-function ACard({card, isMobile}){
+function ACard({card, isMobile, isEnglishFirst}){
     const [isShowAnswer, setIsShowAnswer] = useState(false);
     const [isShowRomaji, setIsShowRomaji] = useState(false);
     const [isShowNoKanji, setIsShowNoKanji] = useState(false);
@@ -44,6 +44,9 @@ function ACard({card, isMobile}){
         setIsShowNoKanji(false);
     }, [card])
 
+    const studyText = isEnglishFirst ? card.english : card.hiragana;
+    const answerText = isEnglishFirst ? card.hiragana : card.english;
+
     return (
         <div>
             {
@@ -52,7 +55,8 @@ function ACard({card, isMobile}){
                 :
                     null
             }
-            <div className="study-text">{card.hiragana}</div>
+            
+            <div className="study-text">{studyText}</div>
 
             {
                 isShowNoKanji ? 
@@ -76,7 +80,7 @@ function ACard({card, isMobile}){
 
             {
                 isShowAnswer ? 
-                    <div className="answer-text">{card.english}</div>
+                    <div className="answer-text">{answerText}</div>
                     :
                     <div>
                         <GreenButton color="primary" onClick={()=>setIsShowAnswer(true)}>Show Answer</GreenButton>
@@ -121,7 +125,7 @@ function FlashCards(props){
     }
     
     let currentCard = {...remaining[currentCardIndex]};
-
+    
     return !_.isEmpty(currentCard) ? (
         <div style={{textAlign: 'center', width: '100%'}} className="card-container">
             {
@@ -147,7 +151,7 @@ function FlashCards(props){
 
             <Card>
                 <CardContent>
-                    <ACard card={currentCard} isMobile={props.isMobile}></ACard>
+                    <ACard card={currentCard} isMobile={props.isMobile} isEnglishFirst={props.isEnglishFirst}></ACard>
                 </CardContent>
                 <CardActions>
                     <div style={{display: 'flex', width: '100%', justifyContent: 'center'}}>
