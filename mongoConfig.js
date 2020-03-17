@@ -7,7 +7,7 @@ let db;
 class MongoConfiguration{
     Initialize(){
         let dbName = 'japan_drills',
-            mongoDBConnectionString = process.env.NODE_ENV === 'production' ? `mongodb://admin:admin1@ds139425.mlab.com:39425/heroku_whwk8fvh` : 'mongodb://127.0.0.1/' + dbName;
+            mongoDBConnectionString = process.env.NODE_ENV !== 'localhost' ? `mongodb://admin:admin1@ds139425.mlab.com:39425/heroku_whwk8fvh` : 'mongodb://127.0.0.1/' + dbName;
         
         mongoose.connect(mongoDBConnectionString, {
             useMongoClient: true
