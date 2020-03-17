@@ -1,38 +1,35 @@
 {
-  "name": "learn-japanese",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.9.5",
-    "@material-ui/icons": "^4.9.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
-    "@testing-library/user-event": "^7.2.1",
-    "lodash": "^4.17.15",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
-    "save": "^2.4.0"
+  "name": "Japan-drills",
+  "description": "Japanese language learning drills",
+  "main": "server.js",
+  "engines": {
+    "node": "10.16.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "prod": "NODE_ENV=production forever start server.js",
+    "stop": "forever stop 0",
+    "start": "NODE_ENV=localhost PORT=3001 node server.js",
+    "build": "npm install grunt build NODE_ENV=production forever start server.js",
+    "test": "NODE_ENV=production"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.17.1",
+    "connect-timeout": "^1.8.0",
+    "cors": "^2.8.4",
+    "ejs": "^2.4.1",
+    "express": "^4.16.2",
+    "express-session": "^1.13.0",
+    "fs": "0.0.1-security",
+    "handlebars": ">=4.0.14",
+    "lodash": ">=4.17.13",
+    "mongoose": "^4.13.9",
+    "node-cache": "^4.1.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1",
+    "request": "^2.88.0",
+    "utf8": "^3.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "devDependencies": {}
 }
