@@ -8,8 +8,8 @@
   "scripts": {
     "prod": "NODE_ENV=production forever start server.js",
     "stop": "forever stop 0",
-    "start": "NODE_ENV=localhost PORT=3001 node server.js",
-    "build": "NODE_ENV=production PORT=3000 node server.js",
+    "dev": "NODE_ENV=localhost PORT=3001 node server.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "NODE_ENV=production"
   },
   "dependencies": {
