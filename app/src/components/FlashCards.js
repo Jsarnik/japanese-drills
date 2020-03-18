@@ -93,12 +93,15 @@ function ACard({card, isMobile, isEnglishFirst}){
 function FlashCards(props){
     const data = useSelector(state => state.cards);
     const dispatch = useDispatch();
+    const cacheKey = `${props.match.params.lesson}${props.isEnglishFirst ? '-e' : ''}`;
     const [currentCardIndex, setCurrentCardIndex] = useState(0);
+    const [finishedIds, setFinishedIds] = useState(JSON.parse(localStorage.getItem(cacheKey)) || []);
+
     const remaining = _.filter(data, o => {
-        return !o.isLesson;
+        return finishedIds.indexOf(o._id) === -1;
     });
     const finished = _.filter(data, o => {
-        return o.isLesson;
+        return finishedIds.indexOf(o._id) !== -1;
     });
 
     useEffect(()=>{
@@ -107,15 +110,18 @@ function FlashCards(props){
     },[]);
 
     function resetLesson(){
-        dispatch(cardActions.resetLesson());
         setCurrentCardIndex(0);
+        localStorage.setItem(cacheKey, JSON.stringify([]));
+        setFinishedIds([])
     }
 
     function setNext(isRepeat){
         if(currentCardIndex+1 < remaining.length){
             if(!isRepeat){
-                currentCard.isLesson = true;
-                dispatch(cardActions.setCard(currentCard));
+                let f = [...finishedIds];
+                f.push(currentCard._id);
+                setFinishedIds(f);
+                localStorage.setItem(cacheKey, JSON.stringify(finishedIds));
             }else{
                 setCurrentCardIndex(currentCardIndex+1);
             }
@@ -125,7 +131,7 @@ function FlashCards(props){
     }
     
     let currentCard = {...remaining[currentCardIndex]};
-    
+
     return !_.isEmpty(currentCard) ? (
         <div style={{textAlign: 'center', width: '100%'}} className="card-container">
             {

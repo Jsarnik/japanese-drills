@@ -170,3 +170,17 @@ export function deleteCard(_card){
         });
     }
 }
+
+
+
+export function setCachedLesson(key, values){
+    return function(dispatch){
+        localStorage.setItem(key, JSON.stringify(values));
+    }
+}
+
+export function getCachedLesson(key){
+    return function(dispatch){
+        return localStorage.getItem(key);
+    }
+}
