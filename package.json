@@ -22,7 +22,7 @@
     "express-session": "^1.13.0",
     "fs": "0.0.1-security",
     "handlebars": ">=4.0.14",
-    "lodash": ">=4.17.13",
+    "lodash": ">=4.17.19",
     "mongoose": "^4.13.9",
     "node-cache": "^4.1.1",
     "passport": "^0.3.2",
