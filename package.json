@@ -21,7 +21,7 @@
     "express": "^4.16.2",
     "express-session": "^1.13.0",
     "fs": "0.0.1-security",
-    "handlebars": ">=4.0.14",
+    "handlebars": ">=4.7.7",
     "lodash": ">=4.17.13",
     "mongoose": "^4.13.9",
     "node-cache": "^4.1.1",
